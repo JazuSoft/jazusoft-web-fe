@@ -35,8 +35,7 @@ const IndexPage = () => {
         <HeroBody>
             <HeroTitle>Helping companies boost their bussiness</HeroTitle>
             <HeroTeaser>
-            A ready-to-use Gatsby theme to build docs for all your projects.
-            Smooth DOC makes documentation easy.
+            A team of professional engineers ready to develop your next project.
             </HeroTeaser>
             <HeroActionList>
             <HeroAction>
