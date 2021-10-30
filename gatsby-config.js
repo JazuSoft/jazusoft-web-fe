@@ -20,18 +20,18 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-		{
-			resolve: "gatsby-source-graphql",
-			options: {
-				typeName: "GitHub",
-				fieldName: "github",
-				url: "https://api.github.com/graphql",
-				headers: {
-					Authorization: `bearer ${process.env.PORTFOLIO_GITHUB_TOKEN}`,
-				},
-				fetchOptions: {},
-			},
-		},
+		// {
+		// 	resolve: "gatsby-source-graphql",
+		// 	options: {
+		// 		typeName: "GitHub",
+		// 		fieldName: "github",
+		// 		url: "https://api.github.com/graphql",
+		// 		headers: {
+		// 			Authorization: `bearer ${process.env.PORTFOLIO_GITHUB_TOKEN}`,
+		// 		},
+		// 		fetchOptions: {},
+		// 	},
+		// },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
@@ -44,14 +44,14 @@ module.exports = {
         display: 'swap'
       }
     },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `https://fabianzamudio-strapi.herokuapp.com`,
-        queryLimit: 1000, // Default to 100
-        contentTypes: [`post`],
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-strapi`,
+    //   options: {
+    //     apiURL: `https://fabianzamudio-strapi.herokuapp.com`,
+    //     queryLimit: 1000, // Default to 100
+    //     contentTypes: [`post`],
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
