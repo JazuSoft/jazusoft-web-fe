@@ -1,0 +1,23 @@
+.touch-form {
+  border-radius: 3px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.touch-form label,
+.touch-form button {
+  font-weight: 500;
+}
+
+.touch-form input,
+.touch-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #6c63ff;
+  padding: 0.8rem 1rem;
+  border-radius: 7px;
+  transition: 0.3s;
+  position: relative;
+  margin-bottom: 1rem;
+}
+

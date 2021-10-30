@@ -2,7 +2,7 @@ import React from "react"
 import ReCAPTCHA from "react-google-recaptcha"
 import { Button } from "../../index";
 
-import './contact-form.scss'
+import './contact-form.css'
 
 const ContactForm = () => (
   <div className="touch-form">
