@@ -6,7 +6,7 @@ import './contact-form.css'
 
 const ContactForm = () => (
   <div className="touch-form">
-    <form name="contact" netlify>
+    <form name="contact" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="Contact Form" />
       <div className="form-group">
         <input type="text" id="name" name="name" className="form-control" placeholder="Full name" required/>
