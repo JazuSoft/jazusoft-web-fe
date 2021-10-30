@@ -6,6 +6,8 @@ import { DocSearch } from './DocSearch'
 import { NavLink } from './Nav'
 import { AppNav } from './AppNav'
 
+import * as jazulogo from '../assets/jazu-logo-transparent-small.png'
+
 const AppHeaderQuery = graphql`
   query AppHeader {
     logos: allFile(
@@ -115,15 +117,13 @@ export function AppHeader() {
               mx={-2}
               to="/"
             >
-              {logo ? (
-                <x.img
+              <x.img
                   col="auto"
                   px={2}
                   height={32}
-                  src={logo.publicURL}
+                  src={jazulogo}
                   alt={data.site.siteMetadata.title}
                 />
-              ) : (
                 <x.h2
                   col="auto"
                   flex="0 1 auto"
@@ -134,7 +134,6 @@ export function AppHeader() {
                 >
                   {data.site.siteMetadata.title}
                 </x.h2>
-              )}
             </NavLink>
           </x.div>
           {data.site.siteMetadata.docSearch ? (

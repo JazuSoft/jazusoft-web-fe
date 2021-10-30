@@ -16,7 +16,8 @@ import {
     FeatureText,
     FeatureImage,
     Projects,
-    Contact
+    Contact,
+    Footer
   } from '../components'
   
 import { Link } from 'gatsby'
@@ -100,8 +101,9 @@ const IndexPage = () => {
     <div id="contact"></div>
     <ScreenContainer as="section" py={5}>        
     <Contact />
-    </ScreenContainer></>
-
+    </ScreenContainer>
+    <Footer></Footer>
+    </>
 }
 
 export default IndexPage
